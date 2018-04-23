@@ -1,0 +1,265 @@
+@media screen and (max-width: 480px){
+    body{
+        font-family: Arial;
+        font-size: 8px;
+    }
+    
+    .naslov {
+    color: blue;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    }
+
+    .opisslike{
+    font-size: 8px;
+    font-style: italic;
+    }
+    
+    .omiljeni{
+    font-style: italic;
+    font-size: 8px;
+    background-color: gainsboro;
+    color: darkred;
+    
+    }
+    
+    .heading{
+    font-size: 8px; 
+    font-style: italic;
+    }
+    .gumb{
+        width:100px;
+        height:30px; 
+        font-size:8px; 
+    }
+    .gumb1{
+        width:100px;
+        height:12px; 
+        font-size:8px; 
+        background-color: cadetblue;
+    }
+    .vidi_sve_btn{
+        width:1800px;
+        height:15px; 
+        font-size:8px; 
+        background-color: buttonface;
+    }
+    .odjava{
+        padding-left: 70%; 
+        background-color: white; 
+        color: black; 
+        font-style: italic;
+        font-size: 8px;
+    }
+    
+}
+
+@media screen and (min-width: 480px)and (max-width: 1024px){
+    body{
+        font-family: Verdana;
+        font-size: 16px;
+    }
+    .naslov {
+    color: blue;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    }
+    
+    .opisslike{
+    font-size: 16px;
+    font-style: italic;
+    }
+    
+    .omiljeni{
+    text-align: center;
+    font-style: italic;
+    font-size: 15px;
+    background-color: gainsboro;
+    color: darkred;
+    }
+    
+    .heading{
+    font-size: 16px; 
+    font-style: italic;
+    }
+    .gumb{
+        width:130px;
+        height:50px; 
+        font-size:16px; 
+    }
+    .gumb1{
+        width:130px;
+        height:30px; 
+        font-size:14px; 
+        background-color: cadetblue;
+    }
+    .vidi_sve_btn{
+        width:200px;
+        height:30px; 
+        font-size:16px; 
+        background-color: buttonface;
+    }
+    .odjava{
+        padding-left: 90%; 
+        background-color: white; 
+        color: black; 
+        font-style: italic;
+        font-size: 16px;
+    }
+    
+}
+
+@media screen and (min-width: 1024px){
+    body{
+        font-family: Candara;
+        font-size: 20px;
+    }
+    .naslov {
+    color: blue;
+    font-size: 35px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+    .opisslike{
+    font-size: 20px;
+    font-style: italic;
+    }
+    .omiljeni{
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    background-color: gainsboro;
+    color: darkred;
+    }
+    
+    
+    .heading{
+    font-size: 22px; 
+    font-style: italic;
+    
+    }
+    .gumb{
+        width:130px;
+        height:50px; 
+        font-size:20px; 
+    }
+    .gumb1{
+        width:180px;
+        height:30px; 
+        font-size:16px; 
+        background-color: cadetblue;
+    }
+    .vidi_sve_btn{
+        width:200px;
+        height:30px; 
+        font-size:16px; 
+        background-color: buttonface;
+    }
+    .odjava{
+        padding-left: 90%; 
+        background-color: white; 
+        color: black; 
+        font-style: italic;
+        font-size: 22px;
+    }
+       
+}
+.podaci {
+    position: relative;
+}
+
+/* implicitno */
+body {
+    background-color: buttonface;
+}
+
+nav {
+    width: 350px;
+   
+}
+
+nav > ul {
+    list-style: none;
+}
+
+nav > ul li a {
+    display: block;
+    border-top-style: dotted;
+    border-width:2px; 
+    border-color: black;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background-color: white;
+}
+
+nav > ul li:first-child a{
+    border-top-style: none;
+}
+
+
+nav > ul li a:hover {
+    color: white;
+    background-color:slateblue ;
+}
+section > table tr a:hover {
+   padding: 10px 30px;
+   background-color:wheat; ; 
+   
+}
+
+form {
+    margin: 20px; padding-left: 10px; padding-right: 10px; 
+}
+
+/* jednoznačno */
+#footer {
+    margin-top: 20%;
+    color: darkslategrey;
+    border-top: 2px dotted #888888;
+}
+
+
+input{
+    background-color: darkkhaki;
+}
+.sadrzaj{
+   position: absolute;
+}
+
+
+table,tr,th,td{
+    border: black solid;
+    border-width: 1px; 
+
+   
+}
+section > table tr:hover {
+   padding: 20px 30px;
+   background-color:wheat; ; 
+   
+}
+th{
+background-color: lavender;
+
+}
+
+.pocetna_frm{
+    height: 50px;
+    width: 500px;
+    align-content: center;
+}
+.pocetna_select{
+    height: 30px;
+    width: 300px;
+    padding-left: 50px;
+}
+.padd{
+    padding-left:300px;
+}
+

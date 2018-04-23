@@ -1,0 +1,387 @@
+@media screen and (max-width: 480px){
+    body{
+        font-family: Arial;
+        font-size: 8px;
+    }
+    
+    .naslov {
+    color: white;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    }
+
+   .slikaprofil{
+       display: none;
+   }  
+    .opisslike{
+    font-size: 8px;
+    font-style: italic;
+    }
+    
+    .omiljeni{
+    font-style: italic;
+    font-size: 8px;
+    background-color: gainsboro;
+    color: darkred;
+    
+    }
+    
+    .heading{
+    font-size: 8px; 
+    font-style: italic;
+    }
+    .gumb{
+        width:70px;
+        height:30px; 
+        font-size:8px; 
+    }
+    .gumb1{
+        width:60px;
+        height:15px; 
+        font-size:8px; 
+        background-color: buttonface;
+    }
+    .vidi_sve_btn{
+        width:100px;
+        height:15px; 
+        font-size:8px; 
+        background-color: buttonface;
+    }
+    .inicijalne{
+        width:100px;
+        height:20px; 
+        font-size:8px;
+        }
+     
+    .upozorenja{
+        font-family: Arial;
+        font-size: 8px; 
+        font-style: italic;
+        position:relative;
+        left:30%;
+        }
+    .upozorenja1{
+        font-family: Arial;
+        font-size: 8px; 
+        font-style: italic;
+        color:red;
+        }
+    .pocetna_frm{
+        height: 30px;
+        width: 250px;
+        align-content: center;
+        }
+    .pocetna_select{
+    height: 20px;
+    width: 170px;
+    padding-left: 5px;
+    }
+    .odjava{
+        padding-left: 70%; 
+        background-color: gainsboro; 
+        color: black; 
+        font-style: italic;
+        font-size: 8px;
+    }
+}
+
+@media screen and (min-width: 480px)and (max-width: 1024px){
+    body{
+        font-family: Verdana;
+        font-size: 16px;
+    }
+    .naslov {
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    }
+    
+    .opisslike{
+    font-size: 16px;
+    font-style: italic;
+    }
+    .omiljeni{
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    background-color: gainsboro;
+    color: darkred;
+    }
+    .heading{
+    font-size: 16px; 
+    font-style: italic;
+    }
+    .gumb{
+        width:130px;
+        height:30px; 
+        font-size:16px; 
+    }
+    .gumb1{
+        width:140px;
+        height:30px; 
+        font-size:14px; 
+        background-color: buttonface;
+    }
+    .vidi_sve_btn{
+        width:200px;
+        height:30px; 
+        font-size:16px; 
+        background-color: buttonface;
+        margin-left: 200px;
+    }
+    .inicijalne{
+        width:150px;
+        height:30px; 
+        font-size:12px;
+        }
+    .upozorenja{
+        font-family: Verdana;
+        font-size: 16px;
+        font-style: italic;
+        position:relative;
+        left:30%;
+        }
+    .upozorenja1{
+        font-family: Verdana;
+        font-size: 10px; 
+        font-style: italic;
+        color:red;
+        }
+    .pocetna_frm{
+    height: 40px;
+    width: 400px;
+    align-content: center;
+    }
+    .pocetna_select{
+    height: 20px;
+    width: 200px;
+    padding-left: 40px;
+    }
+    .odjava{
+        padding-left: 90%; 
+        background-color: gainsboro; 
+        color: black; 
+        font-style: italic;
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    body{
+        font-family: Candara;
+        font-size: 20px;
+    }
+    .naslov {
+    color: white;
+    font-size: 35px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+    .opisslike{
+    font-size: 20px;
+    font-style: italic;
+    }
+    .omiljeni{
+    text-align: center;
+    font-style: italic;
+    font-size: 35px;
+    background-color: gainsboro;
+    color: darkred;
+    }
+    .preklapanje1:hover, .preklapanje2:hover, .preklapanje3:hover{
+    z-index: 3;
+    }
+    .heading{
+    font-size: 22px; 
+    font-style: italic;
+    
+    }
+    .gumb{
+        width:130px;
+        height:50px; 
+        font-size:20px; 
+    }
+    .gumb1{
+        width:180px;
+        height:30px; 
+        font-size:16px; 
+        background-color: buttonface;
+    }
+    .vidi_sve_btn{
+        width:200px;
+        height:30px; 
+        font-size:16px; 
+        background-color: buttonface;
+        margin-left: 200px;
+    }
+    .inicijalne{
+        width:200px;
+        height:30px;
+        font-size:16px;
+        }
+        
+    .upozorenja{
+        font-family: Candara;
+        font-size: 20px;
+        font-style: italic;
+        position:relative;
+        left:30%;
+        }
+    .upozorenja1{
+        font-family: Candara;
+        font-size: 14px;
+        font-style: italic;
+        color:red;
+        }
+        
+    .pocetna_frm{
+    height: 50px;
+    width: 500px;
+    align-content: center;
+    }
+    .pocetna_select{
+    height: 30px;
+    width: 300px;
+    padding-left: 50px;
+    }
+    .odjava{
+        padding-left: 90%; 
+        background-color: gainsboro; 
+        color: black; 
+        font-style: italic;
+        font-size: 22px;
+    }
+       
+}
+.podaci {
+    position: relative;
+}
+
+
+/* implicitno */
+body {
+    background-color: powderblue;
+}
+
+nav {
+    width: 350px;
+   
+}
+
+nav > ul {
+    list-style: none;
+     display:inline-block;
+    
+}
+
+nav > ul li a {
+    display: block;
+    border-top-style: dotted;
+    border-width:2px; 
+    border-color: black;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background-color: wheat;
+}
+
+nav > ul li:first-child a{
+    border-top-style: none;
+}
+
+
+nav > ul li a:hover {
+    color: white;
+    background-color:blue ;
+}
+section > table tr a:hover {
+   padding: 10px 30px;
+   background-color:wheat; ; 
+   
+}
+
+form {
+    margin: 20px; border-style: solid; border-width: 2px; padding-left: 10px; padding-right: 10px; border-color: bisque;
+}
+
+/* jednoznačno */
+#footer {
+    margin-top: 60px;
+    color: darkslategrey;
+    border-top: 2px dotted #888888;
+}
+.nav_horiz  {
+    width: 100%;
+    height: 70px;
+    list-style-type: none;
+    text-align: right;
+    background-color:darkgrey;
+    font-style: italic;
+    border-color: silver;
+    border-top-style: hidden;
+    
+}
+.nav_horiz > .ul .li{
+   display:inline-block; 
+   color: black;
+   background-color: silver;
+}
+.nav_horiz > .ul .li a:hover{
+    color: white;
+}
+
+/* eksplicitno */
+.slikaprofil{
+    position:absolute;
+    top:0;
+    left: 250px;
+}
+
+input{
+    background-color: bisque;
+}
+.sadrzaj{
+   position: absolute;
+}
+.sekcije {
+    border-top: 2px dotted #888888;
+}
+#registracija{
+    position: relative;
+    left:15%;
+}
+#prijava{
+    background-color: gainsboro;
+    color:black;
+    border-color: grey;
+    border-width: 5px;
+}
+
+table,tr,th,td{
+    border: black solid;
+    border-width: 1px; 
+
+   
+}
+section > table tr:hover {
+   padding: 20px 30px;
+   background-color:wheat; ; 
+   
+}
+th{
+background-color: lavender;
+
+}
+#bodovi{
+    position: relative;
+    left: 35%;
+    
+}
+
+
+

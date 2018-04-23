@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dokumentacija</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="naslov" content="Teretana" />
+        <meta name="kljucne_rijeci" content="teretana, dokumentacija" />
+        <meta name="datum_izrade" content="25.05.17." />
+        <meta name="autor" content="Nikolina Bukovec" />
+        <link rel="stylesheet" type="text/css" href="css/nikbukove.css" />
+    </head>
+    <body>
+        <header class="naslov">
+             <div >Dokumentacija sustava</div>
+        </header>
+        <nav>
+              <ul>
+                    <li><a href="dokumentacija.html" >Dokumentacija</a></li>
+                    <li><a href="o_autoru.html" >O autoru</a></li>
+                    <li><a href="index.php" >Početna stranica</a></li>
+                    <li><a href="registracija.php" >Registracija</a></li>
+                    <li><a href="prijava.php">Prijava</a></li>
+                    <li><a href="aktivacija.php">Aktivacija</a></li>
+                    <li><a href="otkljucavanje_korisnika.php">Otkljucavanje korisnika</a></li>
+                    <li><a href="blokiranje_korisnika.php">Blokiranje korisnika</a></li>
+                     <li><a href="postavi_vrijeme.php">Postavljanje vremena</a></li>
+                    <li><a href="vrijeme.php">Virtualno vrijeme sustava</a></li>
+                    <li><a href="dnevnik.php">Dnevnik rada</a></li>
+                    <li><a href="konfiguracija_sustava.php">Konfiguracija sustava</a></li>
+                    <li><a href="privatno/korisnici.php">Korisnici</a></li>
+                </ul>
+            </nav>
+        <div>
+            <h2>Sadržaj: </h2>
+                <nav>
+                    <a href="#sekcija_1_1">1. Opis projektnog zadatka</a><br>
+                    <a href="#sekcija_1_2">2. Opis projektnog rješenja</a><br>
+                    <a href="#sekcija_1_3">3. Bitne odrednice projektnog rješenja (ERA model)</a><br>
+                    <a href="#sekcija_1_4">4. Popis i opis skripata, mapa mjesta, navigacijski dijagram</a><br>
+                    <a href="#sekcija_1_5">5. Popis  i opis korištenih tehnologija i alata</a><br>
+                    <a href="#sekcija_1_6">6. Popis i opis vanjskih (tuđih) modula/biblioteka i njihovo korištenje u skriptama i sl.</a><br>
+                </nav>
+
+            <br><br>
+            
+            <section class="sekcije"> 
+                <h2 id="sekcija_1_1">1. Opis projektnog zadatka</h2><br>
+                <p>Zadatak ovog projekta bio je napraviti web aplikaciju za teretanu. Sustav omogućuje prijavu na programe za trening i praćenje evidencije dolazaka i napredovanja. Aplikacija je izrađena za više tipova korisnika te
+                    svaki tip korisnika može vidjeti i koristiti samo ono što je za njega predviđeno. 
+                    Imamo 4 osnovna tipa korisnika: Neregistrirani korisnik, Registrirani korisnik/Polaznik, Moderator/Trener i Administrator.
+                    
+                <p>1) Neregistrirani korisnik: <br>
+                    Može vidjeti početnu stranicu, javne dokumente o_autoru i dokumentacija te popis vrsta programa,a odabirom vrste vidi tri programa sa ukupno najviše dolazaka.
+                    
+                </p>
+                <p>2) Registrirani korisnik: <br> 
+                    Postaje se registracijom i aktivacijom korisničkog računa. 
+                    Može pregledavati programe te vidi broj slobodnih mjesta i može se prijaviti ukoliko ima mjesta. 
+                    Nakon prijave može pregledavati evidencije dolazaka i opise napredovanja za svaki dolazak na kojem je bio prisutan.
+                    Vidi stranicu sa informacijom o broju skupljenih bodova (dobiva bodove za korištenje određenih dijelova web aplikacije za minimalno pet akcija po želji).
+                    Vidi popis aktivnih kupona u obliku galerije slika za koje ima dovoljno bodova grupirano po programu. Odabirom kupona može vidjeti dokument, sliku i video.
+                    Može dodati kupon u košaricu. Kada je zadovoljan, može potrošiti bodove za kupnju kupona u košarici. 
+                    Korisnik može dijeliti (eng. share) neke sadržaje na društvenu mrežu po želji.
+                    
+                </p>
+                <p>3) Moderator: <br>
+                    Osim funkija koje ima i registrirani korisnik dobiva još neke mogućnosti. 
+                    Moderator kreira jednomjesečni program (snaga, izdržljivost, …) za vrstu definirajući termin vježbe. 
+                    Može otkazati termin programa, u tom slučaju termin se oslobađa, a moderator definira zamjenski termin.
+                    Vodi evidenciju dolazaka i daje opis napredovanja korisnika za određeni dolazak i može zabraniti pristup nekom korisniku.
+                    Moderator bira kupon i definira koliko bodova je potrebno za pojedini kupon za njegov program. Prilikom odabira kupona definira od kada do kada je kupon aktivan. 
+                    Može unijeti kod za kupon i dobiva potvrdu da li takav kod postoji ili je lažan.
+                    Moderator može mijenjati izgled stranice za vrstu programa kojima je on trener.
+                    
+                </p>
+                <p>4) Administrator: <br>
+                    Ima najveće ovlasti i može vidjeti sve aktivnosti ostalih korisnika te ima mogućnosti koje i svi navedeni tipovi korisnika. 
+                    Kreira vrste program vježbanja (individualni, grupni, …) i dodjeljuje moderatore.
+                    Kreira kupone popusta na koje se mogu trošiti bodovi. 
+                    Administrator vidi statistike lojalnosti korisnika (broj skupljenih ili potrošenih bodova po korisniku ili po vrsti akcije).
+                    
+                </p>
+
+            </section>
+
+            <section>
+                <h2 id="sekcija_1_2">2. Opis projektnog rješenja</h2><br>
+                <p> Sve što je realizirano u ovom projektu napravljeno je prema zadanim uputama. Veći dio funkcionalnosti radi pri ćemu su 
+                    moguće neke greške. Neki dijelovi projektnog rješenja nisu realizirani. Dijelovi koji su uspješno implementirani rade i mogu se koristiti.
+                    od funkcionalnosti nije implementirana uloga moderatora, tj. njegove ovlasti. Također, nedostaje straničenje i statistika kod administratora.
+                </p>
+            </section>
+
+            <section>
+                <h2 id="sekcija_1_3">3. Bitne odrednice projektnog rješenja (ERA model)</h2>  
+                <figure> 
+                    <a  href="slike/ERA.png">  
+                        <img src="slike/ERA.png" alt="Era model" width="200"></a>
+                    <figcaption>ERA model</figcaption>
+                </figure>
+            </section>
+
+
+            <section>
+                <h2 id="sekcija_1_4">4. Popis i opis skripata, mapa mjesta, navigacijski dijagram</h2>
+                <figure> 
+                    <a  href="slike/navigacijski.png">  
+                        <img src="slike/navigacijski.png" alt="navigacijski dijagram" width="200" ></a>
+                    <figcaption>Navigacijski dijagram</figcaption>
+                </figure><br>
+                
+                <h3>Popis skripti s opisom: </h3>
+                    <p>dokumentacija.html - sadrži sve potrebe podatke o ovom projektnom zadatku </p>
+                    <p>o_autoru.php - sadrži osnovne podatke o autoru ovog zadatka </p>
+                    <p>index.php - naslovna stranica projekta, pristupa joj se neovisno o tome kojem tipu 
+                        korisnik pripada (dostupna svima) </p>
+                    <p>prijava.php - sadrži mogućnost prijave koja ovisno o tipu korisnika koji posjedujete otvara mogućnosti aplikacije koje nisu svima dostupne </p>
+                    <p>registracija.php - omogućuje da se registrirate i time steknete prava registriranog korisnika </p>
+                    <p>aktivacija.php - služi za aktiviranje korisničkog računa (pomoću aktivacijskog linka) kako bi se korisnik uspješno registrirao </p>
+                    <p>baza.class.php - ovdje se nalaze funkcije koje se koriste za upravljanje podacima iz baze podataka.
+                        Prvenstveno se radi o select, insert, update, delete. </p>
+                    <p>dnevnik.php - osnovna funkcija je da omogućuje biranje datuma te ispiše sve aktivnosti koje su se dogodile na aplikaciji poput prijava,registracija i sl. u biranom vremenskom periodu. Može 
+                        filtrirati i za pojedinog korisnika ili pak ispisati aktivnosti svih mogućih korisnik, neovisno o datumu. </p>
+                    <p>blokiranje_korisnik.php - služi administratoru za blokiranje aktivnih korisnika </p>
+                    <p>odjava.php- skripta koja omogućuje odjavu sa sustava
+                        nakon čega možete vidjeti samo ono što je dostupno neregistriranim korisnicima </p>
+                    <p>otkljucavanje_korisnika.php - skripta koja omogucuje da za određenog korisnika postavimo da mu je korisnički račun otključan </p>
+                    <p>vrati_virtualno.php - skripta koja služi za vraćanje trenutnog virtualnog vremena, sadrži funkciju koja vraća virtualno vrijeme </p>
+                    <p>postavi_vrijeme.php - preusmjerava na skriptu za pomak i dohvaćanje virtualnog vremena, unosom pomaka trenutno vrijeme pomiće se za uneseni broj sati </p>
+                    <p>vrijeme.php - vraća podatk o stvarnom vremenu, te virtualnom vremneu nakon pomaka </p>
+                    <p>korisnici.php - ispis svih korisnika iz baze</p>
+                    <p>Bodovi_i_kuponi.php - daje nformacije o trenutnoj evidenciji bodova korisnika, te dostupnim kuponima u ponudi(za koje ima dovoljno bodova). Odabirom određeng kupona dobiva informacije o njemu ta ga može dodati u košaricu </p>
+                    <p>dodjeliModeratora.php - omogućuje administratoru dodjelu moderatora (odabirom među aktivnim korisnicima) </p>
+                    <p>evidencija_dolazaka.php - omogućuje registriranim korisnicima informiranje o svojim dolascim te napredovanju na programima </p>
+                    <P>konfiguracija_sustava.php - ovdje adminstrator unosi i mijenja podatke o postavkama sustava </p>
+                    <p>kosarica.php - korisnik može dodavati kupone u košaricu, te ju pregledavati kako bi se odlučio za kupnju pojedinog kupona iz košarice</p>
+                    <p>kreirajVrstu.php - omogućuje administratoru kreiranje novih vrsta programa vježbanja </p>
+                    <P>kupnja.php - provodi kupnju kupona kojeg je korisnik odabrao iz košarice, smanjujući broj nejgovih bodova za iznos bodova kupona</p>
+                    <p>kupon.php - sadrži informacije o odabranom kuponu (slika, opis, video) </p>
+                    <p>kuponi_uredi.php - omogućuje adminstratoru izmjenu postojećih i dodavanje novog kupona</p>
+                    <p>programi.php - sadrži informacije o svim programima koji se trenutno izvode u teretani </p>
+                    <p>programi_uredi.php - omogućuje administratoru izmijenu i dodavanja programa vježbanja</p>
+                    <p>zaboravljenaLozinka.php - služi korisniku za dobavljanje nove lozinke, ukoliko je prijašnju zaboravio nova mu se šalje na mail</p>
+                    <p>sesija.class.php - skripta za kreiranje i upravljanje korisničkom sesijom
+                        <br>
+                    <p>nikbukove.css - sadrži css stilske upute za izgled stranice korisnika (registrirani i neregistrirani)</p>
+                    <p>nikbukove2.css - sadrži css stilske upute za izgled stranice administratora</p>
+                        <br>
+                        <p>nikbukove_jquery.js - služi za validaciju na strani korisnika (provodi provjere unosa podataka korisnika kod registracije)</p>
+                        <br>    
+
+            </section>
+
+
+            <section>
+                <h2 id="sekcija_1_5">5. Popis  i opis korištenih tehnologija i alata</h2>  
+                <p>Za ovaj projekt koristila sam tehnologije: HTML, CSS, JavaScript (jquery) i najviše PHP. </p>
+            </section>
+
+
+            <section>
+                <h2 id="sekcija_1_6">6. Popis i opis vanjskih (tuđih) modula/biblioteka i njihovo korištenje u skriptama i sl.</h2><br> 
+                <p>Od vanjskih kodova korišteni su  primjeri sa labosa za dohvat i upravljanje virtualnim
+                    vremenom te baza.class.php skripta za rad s bazom (osnovni upiti) i sesija.class.php za upravljanje sesijom. </p>
+            </section>
+        </div>
+
+        <footer id='footer'>
+             <p>Autor stranice: Nikolina Bukovec </p><br>
+            <p style="font-style: italic">Za sve potrebne informacije obratite se na: nikbukove@foi.hr</p>
+        </footer>
+    </body>
+</html>
